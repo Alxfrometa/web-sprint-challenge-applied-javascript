@@ -1,4 +1,4 @@
-const Header = (title, date, temp) => {
+  const Header = (title, date, temp) => {
   // TASK 1
   // ---------------------
   // Implement this function taking `title`, `date` and `temp` as its 3 args and returning the markup below.
