@@ -1,6 +1,4 @@
-  
 const Header = (title, date, temp) => {
-
   // TASK 1
   // ---------------------
   // Implement this function taking `title`, `date` and `temp` as its 3 args and returning the markup below.
@@ -31,8 +29,6 @@ const Header = (title, date, temp) => {
 
   return top
 }
-// Header("Lambda Times", "January 6, 2021", "26")
-
 
 
 const headerAppender = (selector) => {
@@ -42,9 +38,12 @@ const headerAppender = (selector) => {
   // It should create a header using the Header component above, passing arguments of your choosing.
   // It should append the header to the element in the DOM that matches the given selector.
   //
-  ["header-container"].appendChild(Header)
-  // Header.classList.add('header-container')
+  
+  times.textContent = "Lambda Times"
+  day.textContent = "jan. 6, 2021"
+  degrees.textContent = "26 degrees"
 
+  selector.appendChild(Header)
 }
 
 export { Header, headerAppender }
