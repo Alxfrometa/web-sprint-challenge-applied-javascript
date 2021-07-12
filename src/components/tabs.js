@@ -24,7 +24,7 @@ const Tabs = (topics) => {
   })
   return topic
 }
-
+ 
 
 const tabsAppender = (selector) => {
   // TASK 4
