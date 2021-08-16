@@ -15,7 +15,7 @@ const Header = (title, date, temp) => {
     const theDate = document.createElement('span')
     const theTitle = document.createElement('h1')
     const tempurature = document.createElement('span')
-
+ 
   header.appendChild(theDate)
   header.appendChild(theTitle)
   header.appendChild(tempurature)
