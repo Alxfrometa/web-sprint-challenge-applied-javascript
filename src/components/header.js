@@ -42,6 +42,7 @@ const headerAppender = (selector) => {
   // 
   const newHeader = Header('Lambda Times', 'January 6, 2021', '26°')
   selector.appendChild(newHeader)
+  
 }
 
 export { Header, headerAppender }
