@@ -1,3 +1,5 @@
+import { query } from "express"
+
 const Header = (title, date, temp) => {
   // TASK 1
   // ---------------------
@@ -37,8 +39,9 @@ const headerAppender = (selector) => {
   // Implement this function taking a css selector as its only argument.
   // It should create a header using the Header component above, passing arguments of your choosing.
   // It should append the header to the element in the DOM that matches the given selector.
-  //
-    Header()
+  // 
+  const newHeader = Header('Lambda Times', 'January 6, 2021', '26°')
+  selector.appendChild(newHeader)
 }
 
 export { Header, headerAppender }
