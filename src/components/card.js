@@ -42,6 +42,10 @@ const Card = (article) => {
       imgContainer.appendChild(photo)
     author.appendChild(name)
 
+  card.addEventListener('click', () => {
+    console.log(article.headline)
+  })
+
   return card
 }
 
